@@ -1,0 +1,9 @@
+{
+	"name": "adf-nyc-taxi-wow",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ed0f426d-ec9b-4a20-9858-47d786056287",
+		"tenantId": "05ac296b-2e61-48e0-bb0c-735bc62b323f"
+	}
+}

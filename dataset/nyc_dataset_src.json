@@ -1,0 +1,28 @@
+{
+	"name": "nyc_dataset_src",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "nycweb",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"p_month": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "trip-data/green_tripdata_2023-0@{dataset().p_month}.parquet",
+					"type": "Expression"
+				}
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
